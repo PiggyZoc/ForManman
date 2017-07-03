@@ -1,0 +1,26 @@
+div.content{
+  overflow: hidden;
+}
+div.img_part{
+	height: 319px;
+   border:6px solid white;
+   margin-top: 12px;
+	border-radius: 12px;
+	float: right;
+}
+.sect_2 h2{
+	text-align: right;
+	padding-right: 16px;
+}
+div.content2{
+	overflow: hidden;
+}
+div.img_part2{
+	width: 201px;
+	height: 372px;
+	margin-right: 16px;
+	border:6px solid white;
+    margin-top: 12px;
+	border-radius: 12px;
+	float: left;
+}

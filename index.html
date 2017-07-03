@@ -1,0 +1,140 @@
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>我的家乡</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.1.min.js"></script>
+  <script type="text/javascript" src="js/my.js"></script>
+  <script type="text/javascript">
+    jq(function(){
+  jq("#item2 div:not(:first)").css("display","none");//只显示第一张图片，其它隐藏
+  var bb = jq("#item2 div:last");
+  var aa = jq("#item2 div:first");
+  setInterval(function(){
+   if(bb.is(":visible")){
+    aa.fadeIn(1000).addClass("in");
+    bb.fadeOut(1000);
+  }else{
+    jq("#item2 div:visible").addClass("in");
+    jq("#item2 div.in").next().fadeIn(1000);
+    jq("#item2 div.in").fadeOut(1000).removeClass("in");
+  }
+},3000);
+});
+
+</script>
+<style type="text/css" media="screen">
+
+  div#item2{
+   position: relative;
+   margin: auto;
+   width: inherit;
+   height: 600px;
+ }
+ div.box_child{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+</style>
+</head>
+
+<body>
+  <div class="main">
+    <header> 
+      <div class="container_1">
+
+        <h1><a href="index.html"><img src="images/logo.png" alt="EXTERIOR"></a></h1>
+
+        <div class="menu_block">
+         <ul class="sf_menu">
+           <li><a href="index-2.html">舌尖上的蓬莱</a></li>
+           <li><a href="index-3.html">玩在蓬莱</a></li>
+           <li><a href="index-4.html">城&middot记</a></li>
+           <li><a href="index-5.html">历史&神话</a></li>
+         </ul>
+       </div>
+       
+     </div>
+   </header>
+   <div id="item2">
+    <div class="box_child" style="background: url('images/big1.jpg') 0px 0px no-repeat;background-size:cover; "></div>
+    <div class="box_child" style="background: url('images/big2.jpg') 0px 0px no-repeat;background-size: cover;"></div>
+    <div class="box_child" style="background: url('images/big3.jpg') 0px 0px no-repeat;background-size: cover; "></div>
+    <div class="box_child" style="background: url('images/big4.jpg') 0px 0px no-repeat;background-size: cover; "></div>
+  </div>
+  <div class="contents">
+   <div class="hor_separator"></div>
+   <div class="content_page1">
+    <div class="grid_1">
+      <h1>蓬莱简介</h1>
+      <div class="page_cell">
+        <div class="avatar">
+          <img src="images/avatar.jpg" alt="avatar">
+        </div>
+        <div class="content">
+          <p>蓬莱市地处胶东半岛最北端，濒临渤、黄二海，东临烟台，南接青岛，北与天津、大连等城市及朝鲜半岛隔海相望。</p>
+          <p>蓬莱地处中纬度，属暖温带季风区大陆性气候，冬暖夏凉，无洪水，不受台风影响。 </p>
+        </div>
+      </div>
+    </div>
+    <div class="grid_2">
+      <h1>特色</h1>
+      <ul>
+        <li>冬暖夏凉的气候</li>
+        <li>阳光沙滩</li>
+        <li>可口的小面</li>
+        <li>鲅鱼水饺</li>
+        <li>甘醇的葡萄酒</li>
+        <li>八仙过海的传说</li>
+      </ul>
+    </div>
+    
+  </div>
+  <div class="hor_separator"></div>
+
+  <div class="content_page2">
+   <div class="wrap">
+     <h1>最棒的选择</h1>
+     <div class="toggle">
+       <a  class="prev"></a>
+       <a  class="next"></a>
+     </div>
+   </div>
+   <div class="grid_3">
+   </div>
+ </div>
+ <div class="hor_separator"></div>
+ <div class="content_page3">
+  <div class="grid_4">
+    <h2>我的联系方式</h2>
+    <div class="socials">
+      <a href="#"></a>
+      <a href="#"></a>
+      <a href="#"></a>
+    </div>
+  </div>
+  <div class="grid_5">
+   <h2>告我您的邮箱</h2>
+   <p>如果对我们蓬莱感兴趣，可以留一下邮箱。
+   </p>
+   <p>方便以后的交流，会成为朋友哦</p>
+   <form >
+     <input type="email" name="" value="" placeholder="输入邮箱">
+     <input class="btn" type="button" name="" value="告诉你">
+   </form>
+ </div>
+</div>
+<div class="clear"></div>
+</div>
+
+</div>
+<div class="footer"><footer><div class="clear"></div>
+<div class="clear"></div>
+<div class="clear"></div>
+</footer></div>
+</body>
+</html>

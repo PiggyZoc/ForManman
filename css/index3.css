@@ -1,0 +1,17 @@
+.img_grp{
+	display: flex;
+	flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.img_grp .img_item{
+	width: 360px;
+	height: 240px;
+	border:6px solid white;
+	border-radius: 12px;
+	}
+.img_grp img{
+	width: 360px;
+	height: 240px;
+    
+}

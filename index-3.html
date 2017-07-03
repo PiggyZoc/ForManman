@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>玩在蓬莱</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/index3.css">
+	<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript">
+		var jq = jQuery.noConflict();
+		jq(function(){
+  jq("#item2 div:not(:first)").css("display","none");//只显示第一张图片，其它隐藏
+  var bb = jq(".item2 div:last");
+  var aa = jq(".item2 div:first");
+  setInterval(function(){
+  	if(bb.is(":visible")){
+  		aa.fadeIn(1000).addClass("in");
+  		bb.fadeOut(1000);
+  	}else{
+  		jq(".item2 div:visible").addClass("in");
+  		jq(".item2 div.in").next().fadeIn(1000);
+  		jq(".item2 div.in").fadeOut(1000).removeClass("in");
+  	}
+  },3000);
+});
+
+</script>
+<style type="text/css" media="screen">
+
+	div.item2{
+		position: relative;
+		margin: auto;
+		width:400px;
+		height:300px;
+		border:6px solid white;
+		border-radius: 12px;
+	}
+	div.box_child{
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+	}
+</style>
+</head>
+<body>
+	<div class="main">
+		<header> 
+			<div class="container_1">
+
+				<h1><a href="index.html"><img src="images/logo.png" alt="EXTERIOR"></a></h1>
+
+				<div class="menu_block">
+					<ul class="sf_menu">
+						<li><a href="index-2.html">舌尖上的蓬莱</a></li>
+						<li><a style="color: white;background: #FB4C4C;"  href="index-3.html">玩在蓬莱</a></li>
+						<li><a href="index-4.html">城&middot记</a></li>
+						<li><a href="index-5.html">历史&神话</a></li>
+					</ul>
+				</div>
+
+			</div>
+		</header>
+		<div class="contents">
+			<div class="hor_separator"></div>
+
+			<div class="item2">
+				<div class="box_child" style="background: url('images/swimming0.jpg') 0px 0px no-repeat;background-size:cover; "></div>
+				<div class="box_child" style="background: url('images/swimming1.jpg') 0px 0px no-repeat;background-size: cover;"></div>
+				<div class="box_child" style="background: url('images/swimming2.jpg') 0px 0px no-repeat;background-size: cover; "></div>
+				<div class="box_child" style="background: url('images/swimming3.jpg') 0px 0px no-repeat;background-size: cover; "></div>
+				<div class="box_child" style="background: url('images/swimming4.jpg') 0px 0px no-repeat;background-size:cover; "></div>
+			</div>
+			<div class="article">
+				<h2>海水浴场</h2>
+				<p>蓬莱海水浴场地处蓬莱市海滨旅游区中心地段，距离市区不足千米，位置优越，交通便利，海水浴场北濒大海，与长山列岛遥相呼应，西邻中国古代四大名楼之一、全国重点文物保护单位、国家首批5A级景区——蓬莱阁，东毗国家3A级景区——八仙渡海口，南与全国特色文化广场一路之隔，风光秀美，景色迷人。这里也是观赏海上三大奇观—“海市蜃楼”海滋“平流雾”的绝佳场所。</p>
+			</div>
+			<div class="hor_separator"></div>
+			<div class="img_grp">
+				<div class="img_item"><img src="images/oulebao0.jpg" alt="pic"></div>
+				<div class="img_item"><img src="images/oulebao1.jpg" alt="pic"></div>
+				<div class="img_item"><img src="images/oulebao2.jpg" alt="pic"></div>
+				<div class="img_item"><img src="images/oulebao3.jpg" alt="pic"></div>
+			</div>
+			<div class="article">
+				<h2>欧乐堡</h2>
+				<p>该项目借鉴迪士尼乐园的先进元素，融合东方游乐文化，以世界经典建筑风格为主，主要建设飞翔影院、魔幻城堡、天鹅堡、末日梦魇、过山车、海盗船等大型室内外游乐设施，共包含七个主题区、百余项游乐及观赏项目，总设备数量接近30种，其中大型过山车设备5台，其它大型设备如亚马逊河流漂流和大型水上设备大冲刺等十余台。</p>
+			</div>
+            <div class="hor_separator"></div>
+			<div class="content_page3">
+				<div class="grid_4">
+					<h2>我的联系方式</h2>
+					<div class="socials">
+						<a href="#"></a>
+						<a href="#"></a>
+						<a href="#"></a>
+					</div>
+				</div>
+				<div class="grid_5">
+					<h2>告我您的邮箱</h2>
+					<p>如果对我们蓬莱感兴趣，可以留一下邮箱。
+					</p>
+					<p>方便以后的交流，会成为朋友哦</p>
+					<form >
+						<input type="email" name="" value="" placeholder="输入邮箱">
+						<input class="btn" type="button" name="" value="告诉你">
+					</form>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</div>
+	</div>
+	<div class="footer"><footer><div class="clear"></div>
+	<div class="clear"></div>
+	<div class="clear"></div>
+</footer></div>
+</body>
+</html>
